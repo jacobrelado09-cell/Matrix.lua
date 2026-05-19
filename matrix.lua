@@ -7,7 +7,7 @@ local checkcaller = checkcaller or false
 
 if getrawmetatable and setreadonly then
     local gmt = getrawmetatable(game)
-    setreadonly(gmt, false)
+    setreadonly(gmt, false) 
     local oldNamecall = gmt.__namecall
     local oldIndex = gmt.__index
     local oldNewIndex = gmt.__newindex
