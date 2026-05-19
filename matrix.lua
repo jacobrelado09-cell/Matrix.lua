@@ -439,9 +439,10 @@ end)
 -- BACKEND LINK MANAGER & UI UTILITIES
 ----------------------------------------------------
 ToggleMenuButton.MouseButton1Click:Connect(function()
-    if not PasswordFrame or not PasswordFrame.Parent then
+    if not PasswordFrame.Visible then
         MainFrame.Visible = not MainFrame.Visible
     end
 end)
 
-local function switchPage(title, cp, vp, wp, op, opp,
+-- Completed the missing navigation engine function
+local function switch
